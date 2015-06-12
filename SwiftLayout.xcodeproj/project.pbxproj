@@ -10,6 +10,8 @@
 		FF4BA7E91B2AFF400060FE58 /* SwiftLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = FF4BA7E81B2AFF400060FE58 /* SwiftLayout.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FF4BA7EF1B2AFF400060FE58 /* SwiftLayout.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF4BA7E31B2AFF400060FE58 /* SwiftLayout.framework */; };
 		FF4BA7F61B2AFF400060FE58 /* SwiftLayoutTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF4BA7F51B2AFF400060FE58 /* SwiftLayoutTests.swift */; };
+		FF4BA8011B2AFF9F0060FE58 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF4BA8001B2AFF9F0060FE58 /* UIView.swift */; };
+		FF4BA8031B2AFFD60060FE58 /* NSLayoutConstraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF4BA8021B2AFFD60060FE58 /* NSLayoutConstraint.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +31,8 @@
 		FF4BA7EE1B2AFF400060FE58 /* SwiftLayoutTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftLayoutTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF4BA7F41B2AFF400060FE58 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FF4BA7F51B2AFF400060FE58 /* SwiftLayoutTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftLayoutTests.swift; sourceTree = "<group>"; };
+		FF4BA8001B2AFF9F0060FE58 /* UIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UIView.swift; path = src/UIView.swift; sourceTree = "<group>"; };
+		FF4BA8021B2AFFD60060FE58 /* NSLayoutConstraint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NSLayoutConstraint.swift; path = src/NSLayoutConstraint.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +75,7 @@
 		FF4BA7E51B2AFF400060FE58 /* SwiftLayout */ = {
 			isa = PBXGroup;
 			children = (
+				FF4BA7FF1B2AFF880060FE58 /* src */,
 				FF4BA7E81B2AFF400060FE58 /* SwiftLayout.h */,
 				FF4BA7E61B2AFF400060FE58 /* Supporting Files */,
 			);
@@ -100,6 +105,15 @@
 				FF4BA7F41B2AFF400060FE58 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FF4BA7FF1B2AFF880060FE58 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				FF4BA8001B2AFF9F0060FE58 /* UIView.swift */,
+				FF4BA8021B2AFFD60060FE58 /* NSLayoutConstraint.swift */,
+			);
+			name = src;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -209,6 +223,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FF4BA8011B2AFF9F0060FE58 /* UIView.swift in Sources */,
+				FF4BA8031B2AFFD60060FE58 /* NSLayoutConstraint.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -323,6 +339,7 @@
 		FF4BA7FA1B2AFF400060FE58 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -332,12 +349,14 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
 		FF4BA7FB1B2AFF400060FE58 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
