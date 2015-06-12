@@ -31,15 +31,7 @@ public extension UIView {
     public func sl_setHeight(width: Float) -> NSLayoutConstraint {
         return NSLayoutConstraint(item: self, attribute: .Height, relatedBy: .Equal, toItem: nil, attribute: .NotAnAttribute, multiplier: 1.0, constant: CGFloat(width))
     }
-    
-    public func sl_stackHorizontal(view: UIView) -> NSLayoutConstraint {
-        return NSLayoutConstraint(item: self, attribute: .Leading, relatedBy: .Equal, toItem: view, attribute: .Trailing, multiplier: 1.0, constant: 0.0)
-    }
-    
-    public func sl_stackVertical(view: UIView) -> NSLayoutConstraint {
-        return NSLayoutConstraint(item: self, attribute: .Top, relatedBy: .Equal, toItem: view, attribute: .Bottom, multiplier: 1.0, constant: 0.0)
-    }
-    
+
     public func sl_superviews() -> Array<UIView> {
         var superviews : Array<UIView> = []
         var view : UIView? = self.superview
