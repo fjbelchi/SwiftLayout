@@ -99,7 +99,7 @@ extension UIView {
         return nil;
     }
     
-    func installConstrains() {
+    func sl_installConstrains() {
         var constrains = Array<NSLayoutConstraint>()
         for view in self.subviews {
             view.setTranslatesAutoresizingMaskIntoConstraints(false)
