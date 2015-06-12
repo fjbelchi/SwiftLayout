@@ -28,7 +28,7 @@ extension NSLayoutConstraint {
             
             // check if constraint is unary = secondItem = nil
             if let secondView = self.secondItem as? UIView,
-                let view = firstView.nearestCommonViewAncestor(secondView) {
+                let view = firstView.sl_nearestCommonViewAncestor(secondView) {
                     view.addConstraint(self)
             } else {
                 firstView.addConstraint(self)
