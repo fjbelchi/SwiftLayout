@@ -8,21 +8,21 @@
 
 import Foundation
 
-extension NSLayoutConstraint {
+public extension NSLayoutConstraint {
     
-    func sl_offset(offset:Float) -> NSLayoutConstraint {
+    public func offset(offset:Float) -> NSLayoutConstraint {
         self.constant = CGFloat(offset)
         return self
     }
     
-    func sl_add() -> NSLayoutConstraint {
+    public func sl_add() -> NSLayoutConstraint {
         if let view = self.firstItem as? UIView {
             view.autolayoutConstraints.append(self)
         }
         return self
     }
     
-    func sl_install() -> NSLayoutConstraint {
+    public func sl_install() -> NSLayoutConstraint {
         // refactor with guard
         if let firstView = self.firstItem as? UIView {
             

@@ -6,13 +6,13 @@
 //  Copyright (c) 2015 FJBelchi. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
 private var layoutConstraintsKey = "layoutConstraintsKey"
 
-extension UIView {
+public extension UIView {
     
-    internal var autolayoutConstraints: [NSLayoutConstraint] {
+    public var autolayoutConstraints: [NSLayoutConstraint] {
         get {
             if let constraints = objc_getAssociatedObject(self, &layoutConstraintsKey) as? [NSLayoutConstraint] {
                 return constraints
@@ -24,39 +24,23 @@ extension UIView {
         }
     }
     
-    func sl_alignLeft(view: UIView) -> NSLayoutConstraint {
-        return NSLayoutConstraint(item: self, attribute: NSLayoutAttribute.Left, relatedBy: NSLayoutRelation.Equal, toItem: view, attribute: NSLayoutAttribute.Left, multiplier: 1.0, constant: 0.0)
+    public func sl_setWidth(width: Float) -> NSLayoutConstraint {
+        return NSLayoutConstraint(item: self, attribute: .Width, relatedBy: .Equal, toItem: nil, attribute: .NotAnAttribute, multiplier: 1.0, constant: CGFloat(width))
     }
     
-    func sl_alignTop(view: UIView) -> NSLayoutConstraint {
-        return NSLayoutConstraint(item: self, attribute: NSLayoutAttribute.Top, relatedBy: NSLayoutRelation.Equal, toItem: view, attribute: NSLayoutAttribute.Top, multiplier: 1.0, constant: 0.0)
+    public func sl_setHeight(width: Float) -> NSLayoutConstraint {
+        return NSLayoutConstraint(item: self, attribute: .Height, relatedBy: .Equal, toItem: nil, attribute: .NotAnAttribute, multiplier: 1.0, constant: CGFloat(width))
     }
     
-    func sl_alignRight(view: UIView) -> NSLayoutConstraint {
-        return NSLayoutConstraint(item: self, attribute: NSLayoutAttribute.Right, relatedBy: NSLayoutRelation.Equal, toItem: view, attribute: NSLayoutAttribute.Right, multiplier: 1.0, constant: 0.0)
+    public func sl_stackHorizontal(view: UIView) -> NSLayoutConstraint {
+        return NSLayoutConstraint(item: self, attribute: .Leading, relatedBy: .Equal, toItem: view, attribute: .Trailing, multiplier: 1.0, constant: 0.0)
     }
     
-    func sl_alignBottom(view: UIView) -> NSLayoutConstraint {
-        return NSLayoutConstraint(item: self, attribute: NSLayoutAttribute.Bottom, relatedBy: NSLayoutRelation.Equal, toItem: view, attribute: NSLayoutAttribute.Bottom, multiplier: 1.0, constant: 0.0)
+    public func sl_stackVertical(view: UIView) -> NSLayoutConstraint {
+        return NSLayoutConstraint(item: self, attribute: .Top, relatedBy: .Equal, toItem: view, attribute: .Bottom, multiplier: 1.0, constant: 0.0)
     }
     
-    func sl_setWidth(width: Float) -> NSLayoutConstraint {
-        return NSLayoutConstraint(item: self, attribute: NSLayoutAttribute.Width, relatedBy: NSLayoutRelation.Equal, toItem: nil, attribute: NSLayoutAttribute.NotAnAttribute, multiplier: 1.0, constant: CGFloat(width))
-    }
-    
-    func sl_setHeight(width: Float) -> NSLayoutConstraint {
-        return NSLayoutConstraint(item: self, attribute: NSLayoutAttribute.Height, relatedBy: NSLayoutRelation.Equal, toItem: nil, attribute: NSLayoutAttribute.NotAnAttribute, multiplier: 1.0, constant: CGFloat(width))
-    }
-    
-    func sl_stackHorizontal(view: UIView) -> NSLayoutConstraint {
-        return NSLayoutConstraint(item: self, attribute: NSLayoutAttribute.Leading, relatedBy: NSLayoutRelation.Equal, toItem: view, attribute: NSLayoutAttribute.Trailing, multiplier: 1.0, constant: 0.0)
-    }
-    
-    func sl_stackVertical(view: UIView) -> NSLayoutConstraint {
-        return NSLayoutConstraint(item: self, attribute: NSLayoutAttribute.Top, relatedBy: NSLayoutRelation.Equal, toItem: view, attribute: NSLayoutAttribute.Bottom, multiplier: 1.0, constant: 0.0)
-    }
-    
-    func sl_superviews() -> Array<UIView> {
+    public func sl_superviews() -> Array<UIView> {
         var superviews : Array<UIView> = []
         var view : UIView? = self.superview
         while view != nil {
@@ -71,11 +55,11 @@ extension UIView {
         return superviews
     }
     
-    func sl_isAncestorOf(view: UIView) -> Bool {
+    public func sl_isAncestorOf(view: UIView) -> Bool {
         return contains(view.sl_superviews(), self) // update for swift 2
     }
     
-    func sl_nearestCommonViewAncestor(view: UIView) -> UIView? {
+    public func sl_nearestCommonViewAncestor(view: UIView) -> UIView? {
         if (self == view) {
             return self
         }
@@ -99,7 +83,7 @@ extension UIView {
         return nil;
     }
     
-    func sl_installConstrains() {
+    public func sl_installConstrains() {
         var constrains = Array<NSLayoutConstraint>()
         for view in self.subviews {
             view.setTranslatesAutoresizingMaskIntoConstraints(false)
@@ -109,3 +93,6 @@ extension UIView {
         }
     }
 }
+
+    // MARK: Alignment
+

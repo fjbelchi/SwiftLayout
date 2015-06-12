@@ -10,8 +10,15 @@
 		FF4BA7E91B2AFF400060FE58 /* SwiftLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = FF4BA7E81B2AFF400060FE58 /* SwiftLayout.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FF4BA7EF1B2AFF400060FE58 /* SwiftLayout.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF4BA7E31B2AFF400060FE58 /* SwiftLayout.framework */; };
 		FF4BA7F61B2AFF400060FE58 /* SwiftLayoutTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF4BA7F51B2AFF400060FE58 /* SwiftLayoutTests.swift */; };
-		FF4BA8011B2AFF9F0060FE58 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF4BA8001B2AFF9F0060FE58 /* UIView.swift */; };
-		FF4BA8031B2AFFD60060FE58 /* NSLayoutConstraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF4BA8021B2AFFD60060FE58 /* NSLayoutConstraint.swift */; };
+		FF4BA8651B2B1EF70060FE58 /* NSLayoutConstraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF4BA8631B2B1EF70060FE58 /* NSLayoutConstraint.swift */; };
+		FF4BA8661B2B1EF70060FE58 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF4BA8641B2B1EF70060FE58 /* UIView.swift */; };
+		FF4BA86F1B2B24AD0060FE58 /* NSLayoutConstraint.swift in Headers */ = {isa = PBXBuildFile; fileRef = FF4BA8631B2B1EF70060FE58 /* NSLayoutConstraint.swift */; settings = {ATTRIBUTES = (Public, ); }; };
+		FF4BA8701B2B24AD0060FE58 /* UIView.swift in Headers */ = {isa = PBXBuildFile; fileRef = FF4BA8641B2B1EF70060FE58 /* UIView.swift */; settings = {ATTRIBUTES = (Public, ); }; };
+		FF4BA87C1B2B2B1C0060FE58 /* Align.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF4BA87B1B2B2B1C0060FE58 /* Align.swift */; };
+		FF4BA87E1B2B2BB90060FE58 /* Stacking.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF4BA87D1B2B2BB90060FE58 /* Stacking.swift */; };
+		FF4BA8801B2B35850060FE58 /* Stretching.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF4BA87F1B2B35850060FE58 /* Stretching.swift */; };
+		FF4BA8821B2B35CF0060FE58 /* Centering.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF4BA8811B2B35CF0060FE58 /* Centering.swift */; };
+		FF4BA8841B2B35DF0060FE58 /* Sizing.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF4BA8831B2B35DF0060FE58 /* Sizing.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,8 +38,13 @@
 		FF4BA7EE1B2AFF400060FE58 /* SwiftLayoutTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftLayoutTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF4BA7F41B2AFF400060FE58 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FF4BA7F51B2AFF400060FE58 /* SwiftLayoutTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftLayoutTests.swift; sourceTree = "<group>"; };
-		FF4BA8001B2AFF9F0060FE58 /* UIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UIView.swift; path = src/UIView.swift; sourceTree = "<group>"; };
-		FF4BA8021B2AFFD60060FE58 /* NSLayoutConstraint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NSLayoutConstraint.swift; path = src/NSLayoutConstraint.swift; sourceTree = "<group>"; };
+		FF4BA8631B2B1EF70060FE58 /* NSLayoutConstraint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSLayoutConstraint.swift; sourceTree = "<group>"; };
+		FF4BA8641B2B1EF70060FE58 /* UIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
+		FF4BA87B1B2B2B1C0060FE58 /* Align.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Align.swift; sourceTree = "<group>"; };
+		FF4BA87D1B2B2BB90060FE58 /* Stacking.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Stacking.swift; sourceTree = "<group>"; };
+		FF4BA87F1B2B35850060FE58 /* Stretching.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Stretching.swift; sourceTree = "<group>"; };
+		FF4BA8811B2B35CF0060FE58 /* Centering.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Centering.swift; sourceTree = "<group>"; };
+		FF4BA8831B2B35DF0060FE58 /* Sizing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Sizing.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,8 +87,8 @@
 		FF4BA7E51B2AFF400060FE58 /* SwiftLayout */ = {
 			isa = PBXGroup;
 			children = (
-				FF4BA7FF1B2AFF880060FE58 /* src */,
 				FF4BA7E81B2AFF400060FE58 /* SwiftLayout.h */,
+				FF4BA8621B2B1EF70060FE58 /* src */,
 				FF4BA7E61B2AFF400060FE58 /* Supporting Files */,
 			);
 			path = SwiftLayout;
@@ -107,13 +119,18 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		FF4BA7FF1B2AFF880060FE58 /* src */ = {
+		FF4BA8621B2B1EF70060FE58 /* src */ = {
 			isa = PBXGroup;
 			children = (
-				FF4BA8001B2AFF9F0060FE58 /* UIView.swift */,
-				FF4BA8021B2AFFD60060FE58 /* NSLayoutConstraint.swift */,
+				FF4BA8631B2B1EF70060FE58 /* NSLayoutConstraint.swift */,
+				FF4BA8641B2B1EF70060FE58 /* UIView.swift */,
+				FF4BA87B1B2B2B1C0060FE58 /* Align.swift */,
+				FF4BA87D1B2B2BB90060FE58 /* Stacking.swift */,
+				FF4BA87F1B2B35850060FE58 /* Stretching.swift */,
+				FF4BA8811B2B35CF0060FE58 /* Centering.swift */,
+				FF4BA8831B2B35DF0060FE58 /* Sizing.swift */,
 			);
-			name = src;
+			path = src;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -124,6 +141,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				FF4BA7E91B2AFF400060FE58 /* SwiftLayout.h in Headers */,
+				FF4BA86F1B2B24AD0060FE58 /* NSLayoutConstraint.swift in Headers */,
+				FF4BA8701B2B24AD0060FE58 /* UIView.swift in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -223,8 +242,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FF4BA8011B2AFF9F0060FE58 /* UIView.swift in Sources */,
-				FF4BA8031B2AFFD60060FE58 /* NSLayoutConstraint.swift in Sources */,
+				FF4BA87C1B2B2B1C0060FE58 /* Align.swift in Sources */,
+				FF4BA8801B2B35850060FE58 /* Stretching.swift in Sources */,
+				FF4BA87E1B2B2BB90060FE58 /* Stacking.swift in Sources */,
+				FF4BA8841B2B35DF0060FE58 /* Sizing.swift in Sources */,
+				FF4BA8661B2B1EF70060FE58 /* UIView.swift in Sources */,
+				FF4BA8651B2B1EF70060FE58 /* NSLayoutConstraint.swift in Sources */,
+				FF4BA8821B2B35CF0060FE58 /* Centering.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -346,6 +370,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = SwiftLayout/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -363,6 +388,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = SwiftLayout/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -418,6 +444,7 @@
 				FF4BA7FB1B2AFF400060FE58 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FF4BA7FC1B2AFF400060FE58 /* Build configuration list for PBXNativeTarget "SwiftLayoutTests" */ = {
 			isa = XCConfigurationList;
@@ -426,6 +453,7 @@
 				FF4BA7FE1B2AFF400060FE58 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
