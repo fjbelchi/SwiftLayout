@@ -27,9 +27,9 @@ class AlignTests: XCTestCase {
             XCTAssertEqual(constraint.firstAttribute, firstAttribute, "has to be the same firstAttribute")
             XCTAssertEqual(constraint.secondItem as! UIView, secondItem, "has to be the same object")
             XCTAssertEqual(constraint.secondAttribute, secondAttribute, "has to be the same secondAttribute")
-            XCTAssertEqual(constraint.relation, relation, "has to be the equal")
-            XCTAssertEqual(constraint.constant, constant, "has to be the match")
-            XCTAssertEqual(constraint.multiplier, multipler, "has to be the one")
+            XCTAssertEqual(constraint.relation, relation, "has to be equal")
+            XCTAssertEqual(constraint.constant, constant, "has to be equal")
+            XCTAssertEqual(constraint.multiplier, multipler, "has to equal")
     }
 
     // MARK: Left
