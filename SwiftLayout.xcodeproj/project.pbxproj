@@ -146,6 +146,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		FF4BA8891B2C3BFE0060FE58 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
@@ -174,6 +181,7 @@
 				FF4BA7EA1B2AFF400060FE58 /* Sources */,
 				FF4BA7EB1B2AFF400060FE58 /* Frameworks */,
 				FF4BA7EC1B2AFF400060FE58 /* Resources */,
+				FF4BA8891B2C3BFE0060FE58 /* Headers */,
 			);
 			buildRules = (
 			);
