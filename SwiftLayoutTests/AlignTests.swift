@@ -1,10 +1,9 @@
 //
-//  AlignTests.swift
+//  Align.swift
 //  SwiftLayout
 //
 //  Created by fjbelchi on 12/06/15.
-//  Copyright (c) 2015 FJBelchi. All rights reserved.
-//
+//  Copyright (c) 2015 SwiftLayout. All rights reserved.
 
 import UIKit
 import XCTest
