@@ -11,21 +11,30 @@ import SwiftLayout
 
 class ViewController: UIViewController {
     
-
     override func viewDidLoad() {
         super.viewDidLoad()
+    
         self.view.addSubview(self.buttonOK)
+        self.view.addSubview(self.buttonNext)
+        
+        self.view.sl_installConstrains()
     }
 
     // MARK: Views
     
     lazy var buttonOK : UIButton = {
         let button = UIButton(frame: CGRectZero)
-        button.setTitle("Ok", forState: UIControlState.Normal)
-        button.alignLeft(self.view).offset(10).add()
-        button.alignLeft(self.view, relation: .LessThanOrEqual).offset(10).add()
-        //button.sl_alignLeft(self.view).lessThan(10).add()
-        //button.sl_alignLeft(self.view, relation:.Less).offset(10).add()
+        button.setTitle("Ok", forState: .Normal)
+        button.sl_alignTop(self.view).offset(50).sl_add()
+        button.sl_alignLeading(self.view).offset(10).sl_add()
+        return button
+    }()
+    
+    lazy var buttonNext: UIButton = {
+        let button = UIButton(frame: CGRectZero)
+        button.setTitle("Next", forState: .Normal)
+        button.sl_alignLeading(self.buttonOK).sl_add()
+        button.sl_stackVertical(self.buttonOK).sl_add()
         return button
     }()
     
