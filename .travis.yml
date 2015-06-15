@@ -1,3 +1,1 @@
 language: objective-c
-script:
-  - xcodebuild -project SwiftLayout.xcodeproj/ -scheme SwiftLayout -sdk iphonesimulator clean build test
