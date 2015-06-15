@@ -1,9 +1,18 @@
-test:
-  override:
-    - xctool
-      -reporter pretty
-      -destination 'platform=iOS Simulator,name=iPhone 6,OS=latest'
-      -sdk iphonesimulator
-      -project SwiftLayout.xcodeproj
-      -scheme "SwiftLayout"
-      build build-tests run-tests
+machine:
+  xcode:
+    version: "6.3.1"
+
+environment:
+    XCODE_PROJECT: SwiftLayout.xcodeproj
+    XCODE_SCHEME: SwiftLayout
+
+
+# test:
+#   override:
+#     - xctool
+#       -reporter pretty
+#       -destination 'platform=iOS Simulator,name=iPhone 6,OS=latest'
+#       -sdk iphonesimulator
+#       -project SwiftLayout.xcodeproj
+#       -scheme "SwiftLayout"
+#       build build-tests run-tests
