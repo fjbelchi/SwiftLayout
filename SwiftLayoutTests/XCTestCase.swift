@@ -2,8 +2,8 @@
 //  XCTestCase.swift
 //  SwiftLayout
 //
-//  Created by Fran_DEV on 15/06/15.
-//  Copyright (c) 2015 FJBelchi. All rights reserved.
+//  Created by fjbelchi on 15/06/15.
+//  Copyright (c) 2015 SwiftLayout. All rights reserved.
 //
 
 import XCTest
