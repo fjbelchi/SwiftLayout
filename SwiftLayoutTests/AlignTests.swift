@@ -13,23 +13,6 @@ class AlignTests: XCTestCase {
     
     let view1 = UIView(frame: CGRectZero)
     let view2 = UIView(frame: CGRectZero)
-    
-    private func testConstraint(constraint: NSLayoutConstraint,
-        firstItem: UIView,
-        firstAttribute : NSLayoutAttribute,
-        secondItem: UIView,
-        secondAttribute : NSLayoutAttribute,
-        relation: NSLayoutRelation,
-        constant: CGFloat,
-        multipler: CGFloat) {
-            XCTAssertEqual(constraint.firstItem as! UIView, firstItem, "has to be the same object")
-            XCTAssertEqual(constraint.firstAttribute, firstAttribute, "has to be the same firstAttribute")
-            XCTAssertEqual(constraint.secondItem as! UIView, secondItem, "has to be the same object")
-            XCTAssertEqual(constraint.secondAttribute, secondAttribute, "has to be the same secondAttribute")
-            XCTAssertEqual(constraint.relation, relation, "has to be equal")
-            XCTAssertEqual(constraint.constant, constant, "has to be equal")
-            XCTAssertEqual(constraint.multiplier, multipler, "has to equal")
-    }
 
     // MARK: Left
     

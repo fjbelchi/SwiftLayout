@@ -19,6 +19,8 @@
 		FF4BA8821B2B35CF0060FE58 /* Centering.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF4BA8811B2B35CF0060FE58 /* Centering.swift */; };
 		FF4BA8841B2B35DF0060FE58 /* Sizing.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF4BA8831B2B35DF0060FE58 /* Sizing.swift */; };
 		FF4BA8881B2B39080060FE58 /* AlignTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF4BA8871B2B39080060FE58 /* AlignTests.swift */; };
+		FF4BA88E1B2EB3180060FE58 /* XCTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF4BA88D1B2EB3180060FE58 /* XCTestCase.swift */; };
+		FF4BA8901B2EB41C0060FE58 /* SwiftLayout.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = FF4BA7E31B2AFF400060FE58 /* SwiftLayout.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,6 +32,19 @@
 			remoteInfo = SwiftLayout;
 		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		FF4BA88F1B2EB4100060FE58 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				FF4BA8901B2EB41C0060FE58 /* SwiftLayout.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		FF4BA7E31B2AFF400060FE58 /* SwiftLayout.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftLayout.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -45,6 +60,7 @@
 		FF4BA8811B2B35CF0060FE58 /* Centering.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Centering.swift; sourceTree = "<group>"; };
 		FF4BA8831B2B35DF0060FE58 /* Sizing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Sizing.swift; sourceTree = "<group>"; };
 		FF4BA8871B2B39080060FE58 /* AlignTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlignTests.swift; sourceTree = "<group>"; };
+		FF4BA88D1B2EB3180060FE58 /* XCTestCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XCTestCase.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +121,7 @@
 		FF4BA7F21B2AFF400060FE58 /* SwiftLayoutTests */ = {
 			isa = PBXGroup;
 			children = (
+				FF4BA88D1B2EB3180060FE58 /* XCTestCase.swift */,
 				FF4BA8871B2B39080060FE58 /* AlignTests.swift */,
 				FF4BA7F31B2AFF400060FE58 /* Supporting Files */,
 			);
@@ -182,6 +199,7 @@
 				FF4BA7EB1B2AFF400060FE58 /* Frameworks */,
 				FF4BA7EC1B2AFF400060FE58 /* Resources */,
 				FF4BA8891B2C3BFE0060FE58 /* Headers */,
+				FF4BA88F1B2EB4100060FE58 /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -264,6 +282,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FF4BA88E1B2EB3180060FE58 /* XCTestCase.swift in Sources */,
 				FF4BA8881B2B39080060FE58 /* AlignTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
