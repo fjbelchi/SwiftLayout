@@ -1,4 +1,0 @@
-language: objective-c
-xcode_project: SwiftLayout.xcodeproj
-xcode_scheme: SwiftLayout
-xcode_sdk: 8.3
