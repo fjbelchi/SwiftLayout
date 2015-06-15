@@ -15,7 +15,7 @@ public extension NSLayoutConstraint {
         return self
     }
     
-    public func sl_add() -> NSLayoutConstraint {
+    public func add() -> NSLayoutConstraint {
         if let view = self.firstItem as? UIView {
             view.autolayoutConstraints.append(self)
         }
