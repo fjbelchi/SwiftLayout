@@ -4,16 +4,16 @@ machine:
 
 test:
   override:
-    - xcodebuild
-      -project SwiftLayout.xcodeproj/
-      -scheme SwiftLayout
-      clean test
+    - xctool
+      -reporter pretty
+      -destination 'platform=iOS Simulator,name=iPhone 6,OS=latest'
+      -sdk iphonesimulator
+      -project SwiftLayout.xcodeproj
+      -scheme "SwiftLayout"
+      build build-tests run-tests
 # test:
 #   override:
-#     - xctool
-#       -reporter pretty
-#       -destination 'platform=iOS Simulator,name=iPhone 6,OS=latest'
-#       -sdk iphonesimulator
-#       -project SwiftLayout.xcodeproj
-#       -scheme "SwiftLayout"
-#       build build-tests run-tests
+#     - xcodebuild
+#       -project SwiftLayout.xcodeproj/
+#       -scheme SwiftLayout
+#       clean test
