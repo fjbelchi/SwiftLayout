@@ -1,4 +1,5 @@
 # SwiftLayout
-[![Build Status](https://travis-ci.org/fjbelchi/SwiftLayout.svg?branch=Travis-ci)](https://travis-ci.org/fjbelchi/SwiftLayout)
+
+[![Circle CI](https://circleci.com/gh/fjbelchi/SwiftLayout.svg?style=svg)](https://circleci.com/gh/fjbelchi/SwiftLayout)
 
 Autolayout Lib
